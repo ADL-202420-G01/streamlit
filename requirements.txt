@@ -16,4 +16,4 @@ sodapy
 scipy
 spacy
 streamlit
-tensorflow=2.14.0
+tensorflow=2.10
