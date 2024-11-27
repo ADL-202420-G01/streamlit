@@ -33,6 +33,7 @@ colorama==0.4.6
 flatbuffers==24.3.25
     # via tensorflow-intel
 gast==0.4.0
+gdown
     # via tensorflow-intel
 gitdb==4.0.11
     # via gitpython

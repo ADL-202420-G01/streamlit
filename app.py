@@ -3,7 +3,21 @@ import tensorflow as tf
 from PIL import Image
 import numpy as np
 
-model = tf.keras.models.load_model("cnn_model.h5")
+# model = tf.keras.models.load_model("cnn_model.h5")
+# ID del archivo de Google Drive
+file_id = "1FeaFXjxS9YGxXBYiHQBPad2d787AXsMe"
+output = "unet_model1.h5"
+
+# Descargar el archivo desde Google Drive
+if not os.path.exists(output):
+    url = f"https://drive.google.com/uc?id={file_id}"
+    gdown.download(url, output, quiet=False)
+    print("Modelo descargado exitosamente.")
+
+# Cargar el modelo
+model = tf.keras.models.load_model(output)
+print("Modelo cargado exitosamente.")
+
 label_map = {0:"cat",1:"Dog"}
 
 def preprocess_iamge(image):
