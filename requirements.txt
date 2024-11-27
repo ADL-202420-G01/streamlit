@@ -1,4 +1,5 @@
 contractions
+gdown
 inflect
 keras
 keras-preprocessing
@@ -15,3 +16,4 @@ sodapy
 scipy
 spacy
 streamlit
+tensorflow=2.14.0
